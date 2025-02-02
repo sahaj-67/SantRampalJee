@@ -1,0 +1,43 @@
+:root{
+    --headerposition: 8%;
+}
+@keyframes abc {
+    50%{
+        width: 80%;
+    }
+    100%{
+        width: 0%;
+    }
+}
+header{
+    position: sticky;
+    top: var(--headerposition);
+    nav{
+        background-color: blue;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: row;
+        p{
+            width: 0%;
+            font-size: 4em;
+            overflow: hidden;
+            white-space: nowrap;
+            animation-name: abc;
+            animation-duration: 20s;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            font-weight: bold;
+
+        }img{
+            order: -1;
+        }
+
+    }
+}
+body{
+    width: auto;
+    height: auto;
+}
